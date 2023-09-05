@@ -14,7 +14,7 @@ It houses the Arduino Nano, female headers, DC barrel jack, and screw terminal j
 ### Layout of the PCB
 <img width="467" alt="Ding Temperature Control PCB Layout" src="https://github.com/UCI-Ding-Lab/Temperature-Control/assets/18509861/c2fbfb6e-abaf-4f37-87ea-2d1a9d269fc5">
 
-### A KiCad model of the PCB
+### KiCad model of the PCB
 ![Ding Temperature Control PCB Transparent](https://github.com/UCI-Ding-Lab/Temperature-Control/assets/18509861/287069da-e2cb-484a-8604-a7f40e08ee17)
 
 ## Enclosure
