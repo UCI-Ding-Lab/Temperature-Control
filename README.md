@@ -3,7 +3,7 @@ An accurate, customizable, and cost-effective temperature control system
 
 This GitHub repository includes the PCB KiCad and Gerber files, PCB enclosure STL files, and Arduino code.
 
-Major steps to build the system.
+### Major steps to build the system.
 ![Protocol Graphical Abstract](https://github.com/UCI-Ding-Lab/Temperature-Control/assets/18509861/f62a3cb3-b496-48d2-9e7a-cf232f32378a)
 
 ## PCB
