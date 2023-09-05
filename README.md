@@ -1,6 +1,8 @@
 # Ding Temperature Control
 An accurate, customizable, and cost-effective temperature control system
 
+The temperature control system is designed to maintain a stable temperature from room temperature to 60 °C within 0.06 °C. On the aluminum target block, two adhesive polyimide heating elements and two temperature sensors are attached on the side. These sensors and heating elements are connected to an Arduino Nano which controls the temperature output with an external 24V power supply using PID. 
+
 This GitHub repository includes the PCB KiCad and Gerber files, PCB enclosure STL files, and Arduino code.
 
 ### Major steps to build the system.
