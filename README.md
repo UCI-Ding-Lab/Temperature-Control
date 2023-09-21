@@ -1,5 +1,5 @@
 # Ding Temperature Control
-An accurate, customizable, and cost-effective temperature control system
+An accurate, customizable, and cost-effective temperature control system.
 Please reach out to [UCI Ding Lab](https://www.ding.eng.uci.edu) for any questions or requests. 
 
 The temperature control system is designed to maintain a stable temperature from room temperature to 60 °C within 0.06 °C. On the aluminum target block, two adhesive polyimide heating elements and two temperature sensors are attached on the side. These sensors and heating elements are connected to an Arduino Nano which controls the temperature output with an external 24V power supply using the PID algorithm. 
