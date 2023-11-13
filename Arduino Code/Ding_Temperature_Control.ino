@@ -62,7 +62,7 @@ void readInput()
   probeTemp = probe.getTempCByIndex(0);
 
   // Prints the probe temperature to the serial monitor
-  Serial.print("Internal: ");
+  Serial.print("| Internal:");
   Serial.print(probeTemp, 3);
   Serial.print(" ");
   
@@ -70,7 +70,7 @@ void readInput()
   mcpTemp = mcp.readTempC();
 
   // Prints the surface MCP temperature to the serial monitor
-  Serial.print("Surface:");
+  Serial.print("| Surface:");
   Serial.print(mcpTemp, 3);
   Serial.print(" ");
   
@@ -78,7 +78,7 @@ void readInput()
   mcpTemp2 = mcp2.readTempC();
 
   // Prints the ambient MCP temperature to the serial monitor
-  Serial.print("Ambient:");
+  Serial.print("| Ambient:");
   Serial.print(mcpTemp2, 3);
   Serial.print(" ");
   
@@ -92,7 +92,7 @@ void readInput()
   {
     avgTemp = (probeTemp + mcpTemp) / 2.0;  
     Input = avgTemp;
-    Serial.print("Average:");
+    Serial.print("| Average:");
     Serial.print(avgTemp, 3);
     Serial.println("  ");
     
@@ -179,7 +179,9 @@ void loop()
   }
 
   // Prints new line to serial monitor to serperate each loop
-  Serial.print("\n");
+  Serial.print("| Output:");
+  Serial.print(outputPercent);
+  Serial.print("%");
 
   // Delays for 100 ms to allow the algorithm and sensors to update
   delay(100);
