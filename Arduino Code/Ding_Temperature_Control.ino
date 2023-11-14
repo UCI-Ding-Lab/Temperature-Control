@@ -94,7 +94,7 @@ void readInput()
     Input = avgTemp;
     Serial.print("| Average:");
     Serial.print(avgTemp, 3);
-    Serial.println("  ");
+    Serial.print(" ");
     
     // Prints the average temperature to the top left of the LCD
     lcd.setCursor(0, 0);
@@ -181,7 +181,7 @@ void loop()
   // Prints new line to serial monitor to serperate each loop
   Serial.print("| Output:");
   Serial.print(outputPercent);
-  Serial.print("%");
+  Serial.println("%");
 
   // Delays for 100 ms to allow the algorithm and sensors to update
   delay(100);
