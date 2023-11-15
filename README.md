@@ -4,7 +4,7 @@ Please reach out to [UCI Ding Lab](https://www.ding.eng.uci.edu) for any questio
 
 The temperature control system is designed to maintain a stable temperature from room temperature to 60 °C within 0.06 °C. On the aluminum target block, two adhesive polyimide heating elements and two temperature sensors are attached on the side. These sensors and heating elements are connected to an Arduino Nano which controls the temperature output with an external 24V power supply using the PID algorithm. 
 
-This GitHub repository includes the PCB KiCad and Gerber files, PCB enclosure STL files, and Arduino code.
+This GitHub repository includes the PCB KiCad and Gerber files, PCB enclosure Fusion 360 and STL files, and Arduino code.
 
 ### Major steps to build the system.
 ![Protocol Graphical Abstract](https://github.com/UCI-Ding-Lab/Temperature-Control/assets/18509861/f62a3cb3-b496-48d2-9e7a-cf232f32378a)
@@ -29,4 +29,5 @@ A Fusion 360 model of the enclosure.
 
 ## Arduino Code
 The Arduino Nano on the PCB reads the temperature sensors and calculates the heating power to reach the target temperature with the PID algorithm. 
-Then, a PWM signal is sent to the MOSFET with the heating elements to heat up the target block.
+Then, a PWM signal is sent to the MOSFET with the heating elements to heat the target block.
+The PID algorithm is used from [QuickPID](https://github.com/Dlloydev/QuickPID).
