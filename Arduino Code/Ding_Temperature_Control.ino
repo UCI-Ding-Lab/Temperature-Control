@@ -11,7 +11,7 @@
 #include <LiquidCrystal_I2C.h>
 #include <QuickPID.h>
 
-// Declare pin numbers
+// Declare physical pin numbers connected to the components
 const int PROBEPIN = 9;
 const int HEATERPIN = 6;
 const int TARGETPIN = 1;
@@ -20,7 +20,7 @@ const int TARGETPIN = 1;
 float targetTemp, Input, Output;
 double probeTemp, mcpTemp, mcpTemp2, avgTemp;
 
-// PID gains; change these according to your setup
+// PID constants; change these according to your setup in step 4
 float Kp = 505, Ki = 62, Kd = 92;
 
 // Constructors for sensors
@@ -29,9 +29,11 @@ DallasTemperature probe(&oneWire);
 LiquidCrystal_I2C lcd(0x27,20,4);
 Adafruit_MCP9808 mcp = Adafruit_MCP9808();
 Adafruit_MCP9808 mcp2 = Adafruit_MCP9808();
+
+// Create PID object from QuickPID library by David Lloyd 
 QuickPID myPID(&Input, &Output, &targetTemp);
 
-// Reads potentiometer input and converts to 20-60 Degree for the target temperature
+// Reads potentiometer (temperature control knob) input and converts to 20-60 Degree for the target temperature
 void changeTargetTemp()
 {
   // Read potentiometer input from 0 to 1023
