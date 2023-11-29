@@ -35,4 +35,4 @@ The PID algorithm is implemented from [QuickPID](https://github.com/Dlloydev/Qui
 ## Example Data
 The temperature recording of 4 trials has been provided in an Excel workbook. 
 
-Note: The probe temperature sensor sometimes read -127 °C. This is an expected behavior. The PID algorithm omits the sensor reading and will use the previous average temeprature to calculate power output.
+Note: The probe temperature sensor sometimes read -127 °C. This is an expected behavior. The PID algorithm omits the sensor reading and uses the previous average temeprature to calculate power output.
