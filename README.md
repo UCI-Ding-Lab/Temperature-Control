@@ -31,3 +31,7 @@ A Fusion 360 model of the enclosure.
 The Arduino Nano on the PCB reads the temperature sensors and calculates the heating power to reach the target temperature with the PID algorithm. 
 Then, a PWM signal is sent to the MOSFET with the heating elements to heat the target block.
 The PID algorithm is implemented from [QuickPID](https://github.com/Dlloydev/QuickPID).
+
+## Example Data
+The temperature recording of 4 trials has been provided in an Excel workbook. 
+Note: The probe temperature sensor sometimes read -127 °C. This is an expected behavior. The PID algorithm omits the sensor reading and will use the previous average temeprature to calculate power output.
