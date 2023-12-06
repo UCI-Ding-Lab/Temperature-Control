@@ -59,9 +59,12 @@ void readInput()
   lcd.print("T:");
   lcd.print(targetTemp, 2);
 
-  // Updates the temperature reading from the probe sensor
+  // Updates the temperature reading from the probe sensor, prevents unstable -127 readings
   probe.requestTemperatures(); 
-  probeTemp = probe.getTempCByIndex(0);
+  float probeReading = probe.getTempCByIndex(0);
+  if(probeReading != -127.0)
+    probeTemp = probeReading;
+
 
   // Prints the probe temperature to the serial monitor
   Serial.print("| Internal:");
